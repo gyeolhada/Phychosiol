@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Phychosiol</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_observe">监测</string>
+    <string name="title_emotion">心情</string>
+    <string name="title_warning">发作</string>
+    <string name="title_user">个人</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_cover_login_exist">已有用户</string>
+    <string name="btn_cover_login_manager">管理员登录</string>
+    <string name="str_slogan">数据监测 情绪识别 自我汇报</string>
+    <string name="btn_cover_login_create">创建新用户</string>
+    <string name="login_str_username">用户名</string>
+    <string name="man">男</string>
+    <string name="switch_sex">切换性别</string>
+    <string name="logout">退出</string>
+    <string name="title_mine_edit">编辑个人信息</string>
+
+    <string name="string_level_low">根本没有</string>
+    <string name="string_more_low">有一点儿</string>
+    <string name="string_level_normal">一般程度</string>
+    <string name="string_less_strong">比较强烈</string>
+    <string name="string_level_strong">非常强烈</string>
+    <string name="decline">拒绝</string>
+    <string name="accept">接受</string>
+</resources>

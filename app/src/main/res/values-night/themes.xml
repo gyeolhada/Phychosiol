@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.PhychosiolZ"  parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/black</item>
+        <!-- Customize your theme here. -->
+        <!--        primary color-->
+        <item name="colorPrimary">@color/primary_green</item>
+        <item name="colorSecondary">@color/theme_orange</item>
+        <item name="colorTertiary">@color/primary_green</item>
+<!--        background color-->
+        <item name="android:colorBackground">@color/light_gray</item>
+
+
+    </style>
+</resources>
