@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/question_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="#4E4E4E"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/seekBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="愤怒" />
+
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="24dp"
+        android:background="@null"
+        android:maxHeight="16dp"
+        android:minHeight="16dp"
+        android:paddingStart="0dp"
+        android:paddingEnd="0dp"
+        android:splitTrack="false"
+        android:thumb="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/question_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/question_content"
+        tools:progress="20" />
+
+    <TextView
+        android:id="@+id/tv_low_string"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-16dp"
+        android:layout_marginBottom="2dp"
+        android:text="@string/string_level_low"
+        android:textColor="#101010"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintStart_toStartOf="@+id/seekBar" />
+
+    <TextView
+        android:id="@+id/tv_max_string"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="-16dp"
+        android:layout_marginBottom="2dp"
+        android:text="@string/string_level_strong"
+        android:textColor="#101010"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintEnd_toEndOf="@+id/seekBar" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="@string/string_level_normal"
+        android:textColor="#101010"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_low_string"
+        app:layout_constraintEnd_toEndOf="@+id/seekBar"
+        app:layout_constraintStart_toStartOf="@+id/seekBar" />
+
+    <com.example.phychosiolz.main.mine.questionnaire.Question.view.QuestionLevelTextView
+        android:id="@+id/level_text_view"
+        android:layout_width="0dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="-10dp"
+        app:layout_constraintEnd_toEndOf="@+id/seekBar"
+        app:layout_constraintStart_toStartOf="@+id/seekBar"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+    <TextView
+        android:id="@+id/tv_indicator"
+        android:layout_width="20sp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-2dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:layout_marginStart="66dp"
+        android:textSize="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintStart_toStartOf="@+id/seekBar"
+        tools:text="10" />
+</androidx.constraintlayout.widget.ConstraintLayout>

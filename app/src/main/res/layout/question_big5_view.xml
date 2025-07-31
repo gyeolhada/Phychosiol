@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/tv_min_str"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:gravity="center"
+        android:textColor="#4E4E4E"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="迫切的" />
+
+    <TextView
+        android:id="@+id/tv_max_str"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_min_str"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_min_str"
+        android:textColor="#4E4E4E"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        tools:text="冷静的"/>
+
+    <com.example.phychosiolz.main.mine.questionnaire.Question.view.QuestionBig5Level
+        android:id="@+id/level"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_min_str"
+        app:layout_constraintEnd_toStartOf="@+id/tv_max_str"
+        app:layout_constraintStart_toEndOf="@+id/tv_min_str"
+        app:layout_constraintTop_toTopOf="@+id/tv_min_str" />
+
+</merge>
